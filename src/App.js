@@ -14,11 +14,13 @@ function App() {
     <div className="App">
       <Navbar />
         <Routes>
+        {/* 시작하자 마자 홈페이지가 보지게 하는 것 */}
+        <Route path="/APP"  element={<Home />} />
          <Route path="/"  element={<Home />} />
          <Route path="movies"  element={<Movies />} />
          <Route path="users"  element={<Users />} />
-
       </Routes>
+      
       
         <Footer />
     </div>
